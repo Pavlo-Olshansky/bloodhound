@@ -1,0 +1,8 @@
+data = {'username': 'user', 'password': 'pass'}
+r = requests.post(url, data=data)
+-> token":"c6a1f166790017ddb47d3d7f5e8efdf3187a5f28
+
+headers = {'Authorization': 'Token c6a1f166790017ddb47d3d7f5e8efdf3187a5f28'}
+r = requests.get(url, headers=headers)
+r.text
+-> [ #DATA ]
